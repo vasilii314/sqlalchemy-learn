@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, select, ForeignKey
 from sqlalchemy.future import create_engine
 from sqlalchemy.orm import registry, sessionmaker, relationship
 
-engine = create_engine('postgresql://postgres:31415p@localhost:5432/sqlalchemy', future=True, echo=True)
+engine = create_engine('connection string', future=True, echo=True)
 
 mapper_registry = registry()
 

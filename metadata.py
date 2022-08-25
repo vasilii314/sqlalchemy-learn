@@ -2,7 +2,7 @@ from sqlalchemy import MetaData, Table, Column, Integer, String, select, create_
     ForeignKey, or_
 from sqlalchemy import func
 
-engine = create_engine('postgresql://postgres:31415p@localhost:5432/sqlalchemy', future=True)
+engine = create_engine('connection string', future=True)
 
 
 # The structure of a relational schema is represented using

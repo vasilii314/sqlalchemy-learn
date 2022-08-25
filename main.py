@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, text
 
-engine = create_engine('postgresql://postgres:31415p@localhost:5432/sqlalchemy', future=True, echo=True)
+engine = create_engine('connection string', future=True, echo=True)
 with engine.connect() as connection:
     # text query
     stmt = text('select emp_id, emp_name from employee where emp_id=:emp_id')
